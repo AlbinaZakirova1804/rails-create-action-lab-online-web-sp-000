@@ -39,7 +39,7 @@ describe 'form page' do
 
     fill_in 'first_name', with: "Sansa"
     fill_in 'last_name', with: "Stark"
-
+    byebug
     click_on "Submit Student"
 
     expect(Student.last.first_name).to eq("Sansa")
